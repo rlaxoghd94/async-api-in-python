@@ -4,6 +4,9 @@
 ### pyenv ###
 .python-version
 
+### python ###
+*.pyc
+
 ### direnv ###
 .direnv
 .envrc

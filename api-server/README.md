@@ -8,8 +8,10 @@ config
 
 domain
 
-- DTO, entity, model
-- repository accessing infrastructure
+- directory based on business models which contains:
+    - DTO, entity, model
+    - repository accessing infrastructure
+    - domain-level service
 
 infrastructure
 
@@ -18,8 +20,7 @@ infrastructure
 presentation
 
 - HTTP controllers
-    - may use domain.dto
-- documents files for APIDocs
+- documents files for APIDocs if needed
 
 service
 
@@ -28,4 +29,4 @@ service
 util
 
 - simple utilities
-    - e.g. encryption tools, datetime tools
+    - e.g. encryption util, datetime util
