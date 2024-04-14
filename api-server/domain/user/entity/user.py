@@ -1,6 +1,10 @@
-# TODO: convert this class into a persistence model when DB integration is complete
-class User:
-    user_id: int
-    user_name: str
-    user_email: str
-    user_phone_no: str
+from sqlalchemy import Column, Integer, String
+
+from domain.model_base import Base
+
+
+class User(Base):
+    user_id = Column(Integer, primary_key=True, index=True)
+    user_name = Column(String(30), nullable=False)
+    user_email = Column(String(30), nullable=False)
+    user_phone_no = Column(String(20), nullable=False)

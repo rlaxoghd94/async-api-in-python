@@ -15,9 +15,15 @@ This project will use the following settings:
 | ASGI API Server | Uvicorn + FastAPI  |
 | Auth            | RBAC               |
 | Security        | JWT(Asym ECDSA)    |
-| RDBMS           | H2                 |
+| RDBMS           | ~~H2~~ MySQL       |
 
 and this project will be dockerized and tested via virtual machines
+
+### Update
+
+2024.03.30 - changed from H2 to MySQL
+  - easier to set up a mysql dbms
+  - better data view ability via MySQL Workbench
 
 ## TODO
 
